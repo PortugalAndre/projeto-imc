@@ -8,6 +8,20 @@ header {
   font-size: larger;
 }
 
+input {
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#meuImc {
+  margin-top: 50px;
+}
+
 footer {
   font-family: JetBrains Mono;
   font-size: smaller;
