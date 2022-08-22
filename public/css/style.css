@@ -1,0 +1,17 @@
+body {
+  background-color: lightblue;
+}
+
+header {
+  font-family: JetBrains Mono;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+footer {
+  font-family: JetBrains Mono;
+  font-size: smaller;
+  margin-top: 500px;
+  padding: auto;
+  text-align: end;
+}
