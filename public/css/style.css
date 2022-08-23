@@ -1,12 +1,33 @@
 body {
   background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
 }
 
 header {
   font-family: JetBrains Mono;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
+
+/*.container {
+  border: solid 2px black;
+  background-color: antiquewhite;
+  display: flex;
+}
+#col-left {
+}
+#col-right {
+}
+
+.item {
+  border: solid 2px black;
+  background-color: aquamarine;
+  margin: 10px;
+}*/
 
 input {
   border-radius: 5px;
@@ -22,10 +43,14 @@ p {
   margin-top: 50px;
 }
 
+#consumoDeAgua {
+  margin-top: 50px;
+}
+
 footer {
   font-family: JetBrains Mono;
-  font-size: smaller;
-  margin-top: 500px;
+  font-size: x-small;
+  margin-top: 120px;
   padding: auto;
   text-align: end;
 }
