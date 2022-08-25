@@ -20,8 +20,10 @@
       </div>
     </div> 
     -->
-    <p>Meu peso(kg):<br /><input type="number" id="inputPeso" /></p>
-    <p>Minha altura(m):<br /><input type="number" id="inputAltura" /></p>
+    <p>Meu peso(kg):<br /><input type="number" id="inputPeso" step="0.1" /></p>
+    <p>
+      Minha altura(m):<br /><input type="number" id="inputAltura" step="0.01" />
+    </p>
     <p id="meuImc">
       Meu IMC é: <strong id="resultadoImc"></strong>
       <strong> kg/m²</strong>
@@ -29,7 +31,8 @@
     <p id="minhaFaixaDeIMC">Este IMC indica: <strong>Sobre peso</strong></p>
     <p id="consumoDeAgua">
       Sugerimos, para este peso, ingeir: <br />
-      <strong>3</strong><strong>L</strong> de água por dia
+      <strong id="resultadoConsumoDeAgua">3</strong><strong>L</strong> de água
+      por dia
     </p>
 
     <script src="./js/script.js"></script>
