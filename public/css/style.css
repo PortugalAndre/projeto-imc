@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: #add8e6;
   text-align: center;
   padding: 20px;
   margin: auto;
@@ -12,22 +12,6 @@ header {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
-/*.container {
-  border: solid 2px black;
-  background-color: antiquewhite;
-  display: flex;
-}
-#col-left {
-}
-#col-right {
-}
-
-.item {
-  border: solid 2px black;
-  background-color: aquamarine;
-  margin: 10px;
-}*/
 
 input {
   border-radius: 5px;
@@ -47,10 +31,17 @@ p {
   margin-top: 50px;
 }
 
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 100px;
+}
+
 footer {
   font-family: JetBrains Mono;
   font-size: x-small;
-  margin-top: 120px;
+  margin-top: 80px;
   padding: auto;
   text-align: end;
 }

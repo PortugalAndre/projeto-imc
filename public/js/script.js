@@ -1,4 +1,4 @@
-//Função responsável por iniciar o funcionamento do todo o sistema ao receber inputs do HTML
+//Função responsável por iniciar o funcionamento de todo o sistema ao receber inputs do HTML
 function start() {
   var inputPeso = document.querySelector('#inputPeso');
   var inputAltura = document.querySelector('#inputAltura');
@@ -13,40 +13,33 @@ function calcularImc(peso, altura) {
 }
 
 function calcularConsumoDeAgua(peso) {
-  //prettier-ignore
   return peso * 0.035;
 }
 
-//Função criada para converter valores dos inputs em number, calcular IMC
-//calcular sugestão de consumo de água e exibir resultados no HTML
+//Função criada para converter valores dos inputs em number,
+// calcular IMC, calcular sugestão de consumo de água,
+// escolher faixa de IMC e exibir resultados no HTML
 function inputRecebido() {
   var peso = Number(inputPeso.value);
   var altura = Number(inputAltura.value);
   var imc = calcularImc(peso, altura);
-  resultadoImc.textContent = imc;
+  resultadoImc.textContent = imc.toFixed(2) + 'kg/m²';
   var consumoDeAgua = calcularConsumoDeAgua(peso);
-  resultadoConsumoDeAgua.textContent = consumoDeAgua;
+  resultadoConsumoDeAgua.textContent = consumoDeAgua.toFixed(2) + 'L';
+  if (imc < 18.5) {
+    var faixaImc = 'Baixo peso';
+  } else if (imc >= 18.5 && imc <= 24.9) {
+    var faixaImc = 'Estado nutricional adequado';
+  } else if (imc >= 25 && imc <= 29.9) {
+    var faixaImc = 'Sobrepeso';
+  } else if (imc >= 30 && imc <= 34.9) {
+    var faixaImc = 'Obesidade Grau I';
+  } else if (imc >= 35 && imc <= 39.9) {
+    var faixaImc = 'Obesidade Grau II';
+  } else if (imc >= 40) {
+    var faixaImc = 'Obesidade Grau III';
+  }
+  resultadoFaixaImc.textContent = faixaImc;
 }
 
 start();
-//(x)incluir cálculo de IMC
-//Fórmula do IMC = Peso / (Altura ** 2)
-//(x)Incluir resultado IMC no HTML com JS
-
-//(x)Incluir função sugestão de ingestão de água por dia
-//Fórmula: peso(kg) * 0,035(L) =  L/dia
-//(x)Incluir resultado consumo de água no HTML com JS
-
-//( )alterar casas decimais do IMC
-//( )alterar casas decimais do Sugestão de água
-//(x)alterar casas decimais dos inputs
-//( )Incluir estrutura de decisão da faixa de IMC
-//-receber valor calculado do IMC, estrutura de decisão
-//( )Incluir resultado da decisão no HTML com JS
-
-//( )Estilizar layout
-//-containers para melhor disposição do conteúdo
-//-incluir favicon, incluir fonte JetBrains no HTML
-//( )Tornar layout responsivo
-
-//( )Linkar site da aplicação com repositório do git/github

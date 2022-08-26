@@ -5,36 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+      rel="stylesheet"
+    />
     <title>IMC</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <header>Meu IMC</header>
-    <!--
-    <div class="container">
-      <div id="col-left">
-        <div class="item">1 esq</div>
-        <div class="item">2 esq</div>
-      </div>
-      <div id="col-right">
-        <div class="item">1 dir</div>
-      </div>
-    </div> 
-    -->
-    <p>Meu peso(kg):<br /><input type="number" id="inputPeso" step="0.1" /></p>
+    <header>IMC</header>
+    <p>Seu peso(kg):<br /><input type="number" id="inputPeso" step="0.1" /></p>
     <p>
-      Minha altura(m):<br /><input type="number" id="inputAltura" step="0.01" />
+      Sua altura(m):<br /><input type="number" id="inputAltura" step="0.01" />
     </p>
-    <p id="meuImc">
-      Meu IMC é: <strong id="resultadoImc"></strong>
-      <strong> kg/m²</strong>
+    <p id="meuImc">Seu IMC é: <strong id="resultadoImc"></strong></p>
+    <p id="minhaFaixaDeIMC">
+      De acordo com a OMS, este IMC indica:
+      <strong id="resultadoFaixaImc"></strong>
     </p>
-    <p id="minhaFaixaDeIMC">Este IMC indica: <strong>Sobre peso</strong></p>
     <p id="consumoDeAgua">
       Sugerimos, para este peso, ingeir: <br />
-      <strong id="resultadoConsumoDeAgua">3</strong><strong>L</strong> de água
-      por dia
+      <strong id="resultadoConsumoDeAgua"></strong> de água por dia
     </p>
-
+    <h6>
+      Os valores aqui disponibilizados tem como objetivo apenas informar,<br />
+      é de sua inteira responsabilidade consultar um médico.
+    </h6>
     <script src="./js/script.js"></script>
   </body>
   <footer>PortugaDev</footer>
