@@ -18,9 +18,23 @@
   </head>
   <body>
     <header>IMC</header>
-    <p>Seu peso(kg):<br /><input type="number" id="inputPeso" step="0.1" /></p>
     <p>
-      Sua altura(m):<br /><input type="number" id="inputAltura" step="0.01" />
+      Seu peso(kg):<br /><input
+        type="number"
+        id="inputPeso"
+        step="0.1"
+        min="0.6"
+        max="500"
+      />
+    </p>
+    <p>
+      Sua altura(m):<br /><input
+        type="number"
+        id="inputAltura"
+        step="0.01"
+        min="0.6"
+        max="2.6"
+      />
     </p>
     <p id="meuImc">Seu IMC é: <strong id="resultadoImc"></strong></p>
     <p id="minhaFaixaDeIMC">
